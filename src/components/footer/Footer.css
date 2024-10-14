@@ -1,0 +1,12 @@
+.footer {
+  text-align: center;
+  background-color: rgb(27, 0, 90);
+  color: #fff;
+  padding: 15px 0;
+  font-weight: 400;
+}
+
+.footer h1 {
+  font-weight: 300;
+  font-size: 16px;
+}

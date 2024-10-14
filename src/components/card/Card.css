@@ -1,0 +1,33 @@
+.card-wrapper {
+    background-color: rgb(58, 58, 58);
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-wrapper::after {
+    content: attr(data-back);
+    position: absolute;
+    inset: 0;
+    background-color: rgb(56, 56, 56);
+    border: solid 1px rgb(56, 56, 56);
+    border-radius: 10px;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    color: #fff;
+}
+
+.card-check {
+    transform: rotateY(180deg);
+}
