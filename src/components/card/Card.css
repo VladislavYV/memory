@@ -1,33 +1,65 @@
 .card-wrapper {
-    background-color: rgb(58, 58, 58);
-    overflow: hidden;
+    background-color: rgb(27, 0, 90);
+
     border-radius: 20px;
     position: relative;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: transform 1s;
+    transition: all 1s;
     transform-style: preserve-3d;
+    /* transform: rotateY(180deg); */
+    
+}
+
+.card-wrapper-show {
+    transform: rotateY(180deg);
+}
+
+.card-wrapper-finished {
+    transform: rotateY(0);
 }
 
 .card-wrapper img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    border-radius: 20px;
 }
 
 .card-wrapper::after {
-    content: attr(data-back);
+    content: "uihui";
     position: absolute;
     inset: 0;
-    background-color: rgb(56, 56, 56);
-    border: solid 1px rgb(56, 56, 56);
+    background-color: rgb(27, 0, 90);
     border-radius: 10px;
-    transform: rotateY(180deg);
-    backface-visibility: hidden;
     color: #fff;
+    backface-visibility: hidden;
 }
 
 .card-check {
     transform: rotateY(180deg);
 }
+
+/* .card-show {
+    transform: rotateY(180deg);
+}
+
+.card-finished {
+    transform: rotateY(180deg);
+    cursor: default;
+} */
+
+/* .card::before {
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00bd5e;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    z-index: 100;
+} */

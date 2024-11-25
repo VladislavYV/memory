@@ -15,23 +15,14 @@ export const images = [{
     'id' : 'earth',
     'url' : img1,
 },{
-    'id' : 'earth2',
-    'url' : img11,
-},{
     'id' : 'mars',
     'url' : img2,
-},{
-    'id' : 'mars2',
-    'url' : img22,
 },{
     'id' : 'pluto',
     'url' : img3,
 },{
-    'id' : 'pluto2',
-    'url' : img33,
-},{
-    'id' : 'jupiter',
-    'url' : img4,
+    'id' : 'uran2',
+    'url' : img66,
 },{
     'id' : 'jupiter2',
     'url' : img44,
@@ -39,12 +30,21 @@ export const images = [{
     'id' : 'saturn',
     'url' : img5,
 },{
+    'id' : 'mars2',
+    'url' : img22,
+},{
+    'id' : 'earth2',
+    'url' : img11,
+},{
     'id' : 'saturn2',
     'url' : img55,
+},{
+    'id' : 'pluto2',
+    'url' : img33,
 },{
     'id' : 'uran',
     'url' : img6,
 },{
-    'id' : 'uran2',
-    'url' : img66,
-}];
+    'id' : 'jupiter',
+    'url' : img4,
+},];
