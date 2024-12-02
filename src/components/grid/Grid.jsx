@@ -27,7 +27,7 @@ export default function Grid({ images, finishedItems, checkItems }) {
                 checkItems(visibleItems[0], id);
                 setTimeout(() => {
                     setVisibleItems([]);
-                }, 1000);
+                }, 700);
                 break;
             default:
                 setVisibleItems([]);

@@ -5,6 +5,10 @@ export default function useGame(images) { //images - массив объекто
     const [finishedItems, setFinishedItems] = React.useState([]); // Вычисление текущего состояния игры, сохраняем список отгаданых карточек
     const [stepsCount, setStepsCount] = React.useState(0); // Счетчик шагов - счетчик игры
 
+    const randomCards = () => {
+        images.sort(() => Math.random() - 0.5);
+    }
+
     const checkItems = (firstItem, secondItem) => { // Сравнение двух карточек
         const firstImage = images.find(({ id }) => id === firstItem); //Нужно получить полные объекты данных. Найдем объекты по их id из параметров функции
         const secondImage = images.find(({ id }) => id === secondItem);
@@ -18,9 +22,10 @@ export default function useGame(images) { //images - массив объекто
         setStepsCount((i) => i + 1);
     };
 
-    const handleReset = () => { // Сброси игры - очищение массива отгаданых карточек и счетчика.
+    const handleReset = () => { // Сброс игры - очищение массива отгаданых карточек и счетчика.
         setFinishedItems([]);
         setStepsCount(0);
+        randomCards();
     };
 
     // Что бы понять, что все карточки отгаданы, сравниваем длину массива карточек и списка.

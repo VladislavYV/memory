@@ -17,7 +17,8 @@
 }
 
 .card-wrapper-finished {
-    transform: rotateY(0);
+    transform: rotateY(180deg);
+    border: 5px rgb(0, 187, 56) solid;
 }
 
 .card-wrapper img {
@@ -30,11 +31,12 @@
 }
 
 .card-wrapper::after {
-    content: "uihui";
+    content: "";
     position: absolute;
     inset: 0;
-    background-color: rgb(27, 0, 90);
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
+    border: rgb(27, 0, 90) solid 5px;
     color: #fff;
     backface-visibility: hidden;
 }
@@ -53,7 +55,7 @@
 } */
 
 /* .card::before {
-    content: "";
+    content: "ОК";
     display: flex;
     justify-content: center;
     align-items: center;

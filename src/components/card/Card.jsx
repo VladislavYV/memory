@@ -6,7 +6,6 @@ export default function Card({ item, isVisible, isFinished, onCardClick }) {
     const { id, url } = item;
 
     const handleClick = () => {
-        console.log(id)
         onCardClick(id);
     };
 
