@@ -21,6 +21,16 @@
     border: 5px rgb(0, 187, 56) solid;
 }
 
+.card-wrapper-finished::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    box-shadow: rgb(0, 187, 56) 0px 0px 15px 5px;
+    border-radius: 15px;
+}
+
 .card-wrapper img {
     height: 100%;
     width: 100%;
